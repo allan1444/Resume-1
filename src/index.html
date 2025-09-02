@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allan Mwamuye</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!--Tailwind ON-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    "
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav
+      class="bg-white fixed top-0 left-0 w-full z-50 py-4 shadow-md transition-all duration-300"
+      aria-label="Main navigation"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="text-2xl font-bold text-blue-600"
+          >Allan Mwamuye</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-gray-700 hover:text-blue-600"
+            >Home</a
+          >
+          <a href="#about" class="nav-link text-gray-700 hover:text-blue-600"
+            >About</a
+          >
+          <a href="#services" class="nav-link text-gray-700 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5">
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+          <span class="block w-6 h-0.5 bg-gray-700"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex-col space-y-4 px-4 pb-4"
+      >
+        <!--Add text and image here -->
+        <a href="#home" class="mobile-link text-gray-700 hover:text-blue-600"
+          >Home
+        </a>
+        <a href="#about" class="mobile-link text-gray-700 hover:text-blue-600"
+          >About</a
+        >
+        <a
+          href="#services"
+          class="mobile-link text-gray-700 hover:text-blue-600"
+          >Services</a
+        >
+        <a href="#contact" class="mobile-link text-gray-700 hover:text-blue-600"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Sections -->
+    <section
+      id="home"
+      class="h-screen flex items-center justify-center bg-gray-100"
+    >
+      <h1 class="text-5xl font-bold">Home Section</h1>
+    </section>
+
+    <section
+      id="about"
+      class="h-screen flex items-center justify-center bg-gray-200"
+    >
+      <h1 class="text-5xl font-bold">About Us</h1>
+    </section>
+
+    <section
+      id="services"
+      class="h-screen flex items-center justify-center bg-gray-300"
+    >
+      <h1 class="text-5xl font-bold">Our Services</h1>
+    </section>
+
+    <section
+      id="contact"
+      class="h-screen flex items-center justify-center bg-gray-400"
+    >
+      <h2 class="text-5xl font-bold">Reach Out</h2>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent content hiding behind navbar */
+body {
+  padding-top: 4rem; /* same height as navbar */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
