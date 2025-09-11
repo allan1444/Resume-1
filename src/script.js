@@ -6,13 +6,6 @@ menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-//togglr mobile menu on link click
-
-  document.getElementById('menu-btn').addEventListener('click', () => {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  });
-
   
 // Highlight active section link
 const sections = document.querySelectorAll("section");
