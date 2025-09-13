@@ -102,9 +102,46 @@
     </nav>
 
     <!-- Page Sections -->
+
+<body class="bg-gray-900 text-white font-sans">
+  
+    <!-- Hero Section -->
+    <section id="home"
+      class="py-20 h-screen flex items-center justify-center text-center px-4"
+    >
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Allan Mwamuye</h1>
+        <p class="text-xl md:text-2xl text-gray-400 mb-8">
+          Frontend Developer & UI Designer
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="#about"
+            class="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 transition"
+          >
+            About Me
+          </a>
+          <a
+            href="#experience"
+            class="px-6 py-3 bg-teal-600 rounded-lg hover:bg-teal-700 transition"
+          >
+            Experience
+          </a>
+          <a
+            href="#contact"
+            class="px-6 py-3 bg-pink-600 rounded-lg hover:bg-pink-700 transition"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
     <section
       id="about"
-      class="h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 px-6 text-center"
+      class="py-20 h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 px-6 text-center"
     >
       <h1 class="text-3xl font-bold mb-4">About Me</h1>
       <br />
@@ -126,7 +163,7 @@
     <!--section test for skills-->
     <section
       id="skills"
-      class="bg-gray-100 dark:bg-gray-900 py-16 px-6 text-gray-800 dark:text-white"
+      class="py-20 bg-gray-100 dark:bg-gray-900 py-16 px-6 text-gray-800 dark:text-white"
     >
       <div class="max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
@@ -211,82 +248,56 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         <!-- Card 1 -->
+        
         <div
-          class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+          class="bg-gray-600 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title 1</h2>
-          <p class="text-gray-600">
-            This is a description for card one. It adjusts nicely in a grid
-            layout.
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Cloud Platforms</h2>
+          <p class="text-gray-600 text-lg text-black">
+            <ul class="list-disc list-inside mb-4">
+              <li class="text-lg text-black">Microsoft Azure</li>
+              <li class="text-lg text-black">Microsoft Defender</li>
+              <li class="text-lg text-black">FortiManager Cloud</li>
+              <li class="text-lg text-black">Microsoft CRM</li>
+            </ul>
           </p>
         </div>
 
         <!-- Card 2 -->
         <div
-          class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+          class="bg-gray-600 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title 2</h2>
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Security Expertise</h2>
           <p class="text-gray-600">
-            This is a description for card two. Responsive and clean.
+              <ul class="list-disc list-inside mb-4">
+              <li class="text-lg text-black">Endpoint Security & Detection</li>
+              <li class="text-lg text-black">Cloud Security</li>
+              <li class="text-lg text-black">Data Security & Protection</li>
+              <li class="text-lg text-black">Penetration Testing</li>
+            </ul>
           </p>
         </div>
 
         <!-- Card 3 -->
         <div
-          class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+          class="bg-gray-600 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title 3</h2>
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Frameworks & Tools</h2>
           <p class="text-gray-600">
-            This is a description for card three. Add more cards as needed.
+            <ul class="list-disc list-inside mb-4">
+              <li class="text-lg text-black">Figma</li>
+              <li class="text-lg text-black">Git</li>
+              <li class="text-lg text-black">Github</li>
+               <li class="text-lg text-black">VS Code</li>
+            </ul>
           </p>
         </div>
       </div>
-            <div class="text-left max-w-2xl w-full">
-        <p class="font-semibold mb-2">Security Expertise</p>
-        <ul class="list-disc list-inside mb-4">
-          <li>Endpoint Security & Detection</li>
-          <li>Cloud Security</li>
-          <li>Penetration Testing</li>
-        </ul>
-
-        <p class="font-semibold mb-2">Cloud Platforms</p>
-        <ul class="list-disc list-inside mb-4">
-          <li>Microsoft Azure</li>
-          <li>Microsoft Defender</li>
-          <li>FortiManager Cloud</li>
-        </ul>
-
-
-
-        <!-- Skill Group: Programming Languages -->
-        <div class="mb-10">
-          <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
-          <div class="space-y-4">
-            <SkillBar name="Python" percent="85" color="bg-green-500" />
-            <SkillBar name="Java" percent="70" color="bg-red-500" />
-            <SkillBar name="PHP" percent="65" color="bg-purple-500" />
-          </div>
-        </div>
-
-        <!-- Skill Group: Frameworks & Tools -->
-        <div class="mb-10">
-          <h3 class="text-xl font-semibold mb-4">Frameworks & Tools</h3>
-          <div class="space-y-4">
-            <SkillBar name="Django" percent="75" color="bg-green-700" />
-            <SkillBar name="Laravel" percent="60" color="bg-red-600" />
-            <SkillBar name="Git & GitHub" percent="85" color="bg-gray-700" />
-            <SkillBar name="Figma" percent="70" color="bg-pink-500" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Code for list try 1 -->
     <!-- Add Tailwind's animation plugin or your own custom animation class if needed -->
 
     <section
       id="experience"
-      class="min-h-screen bg-gray-500 dark:bg-gray-900 px-6 py-12"
+      class="py-20 min-h-screen bg-gray-500 dark:bg-gray-900 px-6 py-12"
     >
       <h1
         class="text-3xl font-bold text-gray-800 shadow-red-400 dark:text-white mb-10 text-center"
@@ -435,7 +446,7 @@
     <!-- Education Section -->
     <section
       id="education"
-      class="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-12"
+      class="py-20 min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-12"
     >
       <h2
         class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12"
@@ -551,7 +562,7 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="min-h-screen bg-gray-500 dark:bg-gray-900 px-6 py-16 text-white"
+      class="py-20 bg-gray-500 dark:bg-gray-900 px-6 py-16 text-white"
     >
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <!-- Career Objectives -->
@@ -664,7 +675,7 @@ style="fill:#12e619;">
     </section>
     <footer>
       <div
-        class="bg-gray-50 dark:bg-gray-800 text-center py-4 text-sm text-gray-600 dark:text-gray-400"
+        class="py-2 bg-gray-50 dark:bg-gray-800 text-center text-sm text-gray-600 dark:text-gray-400"
       >
         © Allan Mwamuye 2025. All rights reserved.
       </div>
