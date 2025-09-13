@@ -627,3 +627,50 @@ body {
 .animate-fade-up {
   animation: fade-up 0.8s ease-out both;
 }
+
+
+/* Add education CSS */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+
+/*trial animation*/
+/* Add to your global CSS */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover\\:animate-spin-slow:hover {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-horizontal {
+  animation: slide-horizontal 20s linear infinite;
+}
+
+.animate-slide-horizontal:hover {
+  animation-play-state: paused;
+}
