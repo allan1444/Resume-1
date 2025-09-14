@@ -115,11 +115,11 @@
   
     <!-- Hero Section -->
     <section id="home"
-      class="animate-glow p-5 rounded-lg py-20 h-screen flex items-center justify-center text-center px-4 bg-gray-100 dark:bg-gray-800"
+      class="flex min-h-screen items-center justify-center bg-gradient-to-tr to-blue-600 from-gray-800 p-10"
     >
 
       <div>
-        <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Allan Mwamuye</h1>
+        <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold">Hi, I'm Allan Mwamuye</h1>
         <p class="text-xl md:text-2xl text-gray-400 mb-8">
           Frontend Developer & UI Designer
         </p>
@@ -144,6 +144,39 @@
           </a>
         </div>
       </div>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        keyframes: {
+          typing: {
+            "0%": {
+              width: "0%",
+              visibility: "hidden",
+            },
+            "100%": {
+              width: "100%",
+            },
+          },
+          blink: {
+            "50%": {
+              borderColor: "transparent",
+            },
+            "100%": {
+              borderColor: "white",
+            },
+          },
+        },
+        animation: {
+          typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        },
+      },
+    },
+    plugins: [],
+  };
+</script>
+
     </section>
 
 
