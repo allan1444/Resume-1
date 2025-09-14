@@ -56,7 +56,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5">
+        <button id="menu-btn" class="md:hidden flex flex-col  space-y-1.5">
           <span class="block w-6 h-0.5 bg-gray-700 dark:bg-gray-200"></span>
           <span class="block w-6 h-0.5 bg-gray-700 dark:bg-gray-200"></span>
           <span class="block w-6 h-0.5 bg-gray-700 dark:bg-gray-200"></span>
@@ -66,7 +66,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden flex-col space-y-4 px-4 pb-4"
+        class="hidden md:hidden flex-rows flex-wrap space-y-4 px-4 pb-4"
       >
         <a
           href="#home"
@@ -98,6 +98,14 @@
           class="mobile-link text-gray-700 dark:text-gray-200 hover:text-red-600"
           >Contact</a
         >
+
+        <!--Script for toggle harmburger mobile menu-->
+        <script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
       </div>
     </nav>
 
@@ -107,8 +115,9 @@
   
     <!-- Hero Section -->
     <section id="home"
-      class="py-20 h-screen flex items-center justify-center text-center px-4 bg-gray-100 dark:bg-gray-800"
+      class="animate-glow p-5 rounded-lg py-20 h-screen flex items-center justify-center text-center px-4 bg-gray-100 dark:bg-gray-800"
     >
+
       <div>
         <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Allan Mwamuye</h1>
         <p class="text-xl md:text-2xl text-gray-400 mb-8">

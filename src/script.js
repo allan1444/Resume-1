@@ -42,3 +42,4 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("py-2", "shadow-lg");
   }
 });
+
