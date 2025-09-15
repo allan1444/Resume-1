@@ -196,6 +196,17 @@
     opacity: 1;
   }
 
+  /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.2em;
+      }
+
+      .box {
+        flex: 1 1 100%;
+      }
+/*end of responsive adj section test*/
+      
   @supports (not (-webkit-appearance: -apple-pay-button)) or (contain-intrinsic-size: 1px) {
     ::placeholder {
       color: currentcolor;
